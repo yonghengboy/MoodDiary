@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 应用名 -->
+    <string name="app_name">日记生成器</string>
+
+    <!-- 主界面 -->
+    <string name="title_main">日记生成器</string>
+    <string name="hint_location">📍 输入地点（如：云南）</string>
+    <string name="hint_face">😺 自定义颜文字（可空）</string>
+    <string name="use_random_face">使用随机表情</string>
+    <string name="mood_auto">（自动判断）</string>
+    <string name="btn_save">保存设置</string>
+    <string name="btn_generate">✨ 生成日记</string>
+    <string name="btn_copy">📋 复制到剪贴板</string>
+    <string name="btn_settings">⚙ 设置</string>
+    <string name="placeholder_result">日记将在这里显示…</string>
+    <string name="toast_saved">设置已保存</string>
+    <string name="toast_copied">已复制到剪贴板</string>
+
+    <!-- 设置界面 -->
+    <string name="title_settings">设置</string>
+    <string name="theme_light">浅色模式</string>
+    <string name="theme_dark">深色模式</string>
+    <string name="theme_auto">跟随系统</string>
+    <string name="btn_back">返回</string>
+    <string name="toast_theme_changed">主题已更改，请重新启动 App 生效</string>
+
+    <!-- 心情数组：用于 Spinner -->
+    <string-array name="mood_array">
+        <item>（自动判断）</item>
+        <item>堕落</item>
+        <item>疲惫</item>
+        <item>沉思</item>
+        <item>忙碌</item>
+        <item>坚持</item>
+        <item>平静</item>
+        <item>开心</item>
+        <item>放松</item>
+        <item>愤怒</item>
+        <item>焦虑</item>
+        <item>悲伤</item>
+    </string-array>
+</resources>

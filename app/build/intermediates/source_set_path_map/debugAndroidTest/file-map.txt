@@ -1,0 +1,4 @@
+com.example.mooddiary.test.app-androidTest-0 E:\APPlication file\Downloads\MoodDiary_GradleReadyProject\app\build\generated\res\resValues\androidTest\debug
+com.example.mooddiary.test.app-mergeDebugAndroidTestResources-1 E:\APPlication file\Downloads\MoodDiary_GradleReadyProject\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.mooddiary.test.app-mergeDebugAndroidTestResources-2 E:\APPlication file\Downloads\MoodDiary_GradleReadyProject\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.mooddiary.test.app-merged_res-3 E:\APPlication file\Downloads\MoodDiary_GradleReadyProject\app\build\intermediates\merged_res\debugAndroidTest

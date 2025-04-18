@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="backgroundPrimary">#121212</color>
+    <color name="textPrimary">#FFFFFF</color>
+    <style name="Theme.MoodDiary" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        
+        <item name="android:colorBackground">#121212</item>
+        <item name="android:textColor">#FFFFFF</item>
+
+        
+        <item name="colorPrimary">#BB86FC</item>
+        <item name="colorPrimaryVariant">#3700B3</item>
+        <item name="colorOnPrimary">#000000</item>
+
+        <item name="android:statusBarColor" ns1:targetApi="l">#000000</item>
+        <item name="android:navigationBarColor" ns1:targetApi="l">#000000</item>
+    </style>
+</resources>

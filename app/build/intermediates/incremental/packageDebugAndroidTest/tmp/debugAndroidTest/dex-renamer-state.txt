@@ -1,0 +1,4 @@
+#Fri Apr 18 15:38:41 CST 2025
+base.0=E\:\\APPlication file\\Downloads\\MoodDiary_GradleReadyProject\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
+path.0=0/classes.dex
+renamed.0=classes.dex

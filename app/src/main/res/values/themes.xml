@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 主应用主题，支持深色与浅色模式 -->
+    <style name="Theme.MoodDiary" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <!-- 应用背景色与默认文本颜色 -->
+        <item name="android:colorBackground">#FFFFFF</item> <!-- 背景色（浅色模式默认白色） -->
+        <item name="android:textColor">#000000</item>       <!-- 文本色（浅色模式默认黑色） -->
+
+        <!-- 按钮、卡片等 UI 控件的主要颜色 -->
+        <item name="colorPrimary">#6200EE</item>            <!-- 主题色（紫色） -->
+        <item name="colorPrimaryVariant">#3700B3</item>     <!-- 主题强调色（深紫色） -->
+        <item name="colorOnPrimary">#FFFFFF</item>          <!-- 主要色之上的文字颜色（白色） -->
+
+        <!-- 状态栏与导航栏颜色（API 21+ 生效） -->
+        <item name="android:statusBarColor" tools:targetApi="l">#6200EE</item>
+        <item name="android:navigationBarColor" tools:targetApi="l">#6200EE</item>
+
+    </style>
+
+    <!-- 🔥 单独定义启动页主题，继承 NoActionBar 的沉浸式体验 -->
+    <style name="Theme.MoodDiary.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>  <!-- 透明窗口背景 -->
+        <item name="android:windowNoTitle">true</item>                          <!-- 去除标题栏 -->
+        <item name="android:windowFullscreen">true</item>                       <!-- 全屏显示 -->
+        <item name="android:windowTranslucentStatus">true</item>                <!-- 状态栏半透明效果 -->
+    </style>
+
+</resources>
