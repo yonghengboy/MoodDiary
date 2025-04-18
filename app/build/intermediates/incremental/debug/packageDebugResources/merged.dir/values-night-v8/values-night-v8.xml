@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="backgroundPrimary">#121212</color>
+    <color name="textPrimary">#FFFFFF</color>
+    <style name="Theme.MoodDiary" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        <item name="android:colorBackground">#121212</item>
+        <item name="android:textColor">#FFFFFF</item>
+
+        
+        <item name="colorPrimary">#BB86FC</item>
+        <item name="colorPrimaryVariant">#3700B3</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        
+        <item name="android:statusBarColor" ns1:targetApi="l">#BB86FC</item>
+        <item name="android:navigationBarColor" ns1:targetApi="l">#121212</item>
+    </style>
+    <style name="Theme.MoodDiary.Splash" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+    <style name="ThemeToggleButton" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/selector_theme_button_bg</item>
+        <item name="android:textColor">@color/selector_theme_button_text</item>
+    </style>
+</resources>

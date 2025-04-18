@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 支持深浅色模式的主界面布局 -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:colorBackground"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 顶部主标题（居中） -->
+        <com.example.mooddiary.GradientTextView
+            android:id="@+id/mainTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/title_main"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+
+        <!-- 设置区域卡片容器 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- 地点输入 -->
+                <EditText
+                    android:id="@+id/etLocation"
+                    android:hint="@string/hint_location"
+                    android:inputType="text"
+                    android:textColor="?android:textColorPrimary"
+                    android:backgroundTint="?colorControlNormal"
+                    android:minHeight="48dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!-- 表情输入 -->
+                <EditText
+                    android:id="@+id/etFace"
+                    android:hint="@string/hint_face"
+                    android:inputType="text"
+                    android:textColor="?android:textColorPrimary"
+                    android:backgroundTint="?colorControlNormal"
+                    android:minHeight="48dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!-- 使用随机表情 -->
+                <CheckBox
+                    android:id="@+id/cbRandomFace"
+                    android:text="@string/use_random_face"
+                    android:textColor="?android:textColorPrimary"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!-- 心情选择下拉框 -->
+                <Spinner
+                    android:id="@+id/spMoodSelect"
+                    android:layout_marginTop="14dp"
+                    android:minHeight="48dp"
+                    android:popupBackground="?colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!-- 保存设置按钮 -->
+                <Button
+                    android:id="@+id/btnSave"
+                    android:text="@string/btn_save"
+                    android:backgroundTint="@color/teal_200"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 生成日记按钮 -->
+        <Button
+            android:id="@+id/btnGenerate"
+            android:text="@string/btn_generate"
+            android:backgroundTint="@color/purple_200"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- 复制按钮 -->
+        <Button
+            android:id="@+id/btnCopy"
+            android:text="@string/btn_copy"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- 设置按钮 -->
+        <Button
+            android:id="@+id/btnSettings"
+            android:text="@string/btn_settings"
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- 显示日记内容 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/resultCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="visible"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <TextView
+                android:id="@+id/tvResult"
+                android:text="@string/placeholder_result"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:background="#1E1E1E"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

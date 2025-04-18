@@ -1,0 +1,5 @@
+<resources>
+    <!-- 和上面变量名保持一致，但颜色不同 -->
+    <color name="backgroundPrimary">#121212</color> <!-- 深色背景 -->
+    <color name="textPrimary">#FFFFFF</color>       <!-- 深色文字 -->
+</resources>

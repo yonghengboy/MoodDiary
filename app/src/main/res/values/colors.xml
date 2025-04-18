@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主题基础色 -->
+    <color name="purple_200">#BB86FC</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#6666FF</color>
+    <color name="green">#4CAF50</color>
+
+    <color name="backgroundPrimary">#FFFFFF</color> <!-- 浅色背景 -->
+    <color name="textPrimary">#000000</color>       <!-- 浅色文字 -->
+
+    <!-- 启动页渐变色 -->
+    <color name="splash_gradient_start">#FF8A65</color>  <!-- 渐变起始色 -->
+    <color name="splash_gradient_end">#00BCD4</color>    <!-- 渐变结束色 -->
+</resources>

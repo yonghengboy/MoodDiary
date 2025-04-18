@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <string-array name="mood_array">
+        <item>（自动判断）</item>
+        <item>堕落</item>
+        <item>疲惫</item>
+        <item>沉思</item>
+        <item>忙碌</item>
+        <item>坚持</item>
+        <item>平静</item>
+        <item>开心</item>
+        <item>放松</item>
+        <item>愤怒</item>
+        <item>焦虑</item>
+        <item>悲伤</item>
+    </string-array>
+    <color name="backgroundPrimary">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blue">#6666FF</color>
+    <color name="green">#4CAF50</color>
+    <color name="purple_200">#BB86FC</color>
+    <color name="splash_gradient_end">#00BCD4</color>
+    <color name="splash_gradient_start">#FF8A65</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="textPrimary">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">日记生成器</string>
+    <string name="btn_back">返回</string>
+    <string name="btn_copy">📋 复制到剪贴板</string>
+    <string name="btn_generate">✨ 生成日记</string>
+    <string name="btn_save">保存设置</string>
+    <string name="btn_settings">⚙ 设置</string>
+    <string name="enable_mood">生成心情</string>
+    <string name="enable_quote">生成推荐语</string>
+    <string name="enable_splash">启用开屏页</string>
+    <string name="generate_setting">生成设置</string>
+    <string name="generate_settings_title">生成内容设置</string>
+    <string name="hint_face">😺 自定义颜文字（可空）</string>
+    <string name="hint_location">📍 输入地点（如：云南）</string>
+    <string name="hint_splash_duration">请输入 1~10</string>
+    <string name="label_enable_splash">启用开屏页面</string>
+    <string name="label_splash_duration">动画时长（秒）</string>
+    <string name="mood_auto">（自动判断）</string>
+    <string name="placeholder_result">日记将在这里显示…</string>
+    <string name="splash_duration">开屏显示时长（毫秒）</string>
+    <string name="splash_duration_1000">1000</string>
+    <string name="splash_duration_10000">10000</string>
+    <string name="splash_duration_2000">2000</string>
+    <string name="splash_duration_3000">3000</string>
+    <string name="splash_duration_5000">5000</string>
+    <string name="splash_setting">开屏页面设置</string>
+    <string name="splash_settings_title">开屏设置</string>
+    <string name="theme_auto">跟随系统</string>
+    <string name="theme_dark">深色模式</string>
+    <string name="theme_light">浅色模式</string>
+    <string name="theme_title">外观主题</string>
+    <string name="title_appearance">外观主题</string>
+    <string name="title_generate_settings">生成设置</string>
+    <string name="title_main">日记生成器</string>
+    <string name="title_settings">设置</string>
+    <string name="title_splash_settings">开屏设置</string>
+    <string name="toast_copied">已复制到剪贴板</string>
+    <string name="toast_saved">设置已保存</string>
+    <string name="toast_theme_changed">主题已更改，请重新启动 App 生效</string>
+    <string name="use_random_face">使用随机表情</string>
+    <style name="Theme.MoodDiary" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        <item name="android:colorBackground">#FFFFFF</item>
+        <item name="android:textColor">#000000</item>
+
+        
+        <item name="colorPrimary">#6200EE</item>
+        <item name="colorPrimaryVariant">#3700B3</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        
+        <item name="android:statusBarColor" ns1:targetApi="l">#6200EE</item>
+        <item name="android:navigationBarColor" ns1:targetApi="l">#6200EE</item>
+    </style>
+    <style name="Theme.MoodDiary.Splash" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+    <style name="ThemeToggleButton" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/selector_theme_button_bg</item>
+        <item name="android:textColor">@color/selector_theme_button_text</item>
+    </style>
+</resources>

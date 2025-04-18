@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:colorBackground">
+
+    <!-- ✅ 顶部返回栏 -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="@string/title_splash_settings"
+        app:titleCentered="true"
+        android:titleTextColor="?attr/colorOnPrimary"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:navigationContentDescription="@string/btn_back" />
+
+
+
+    <!-- ✅ 设置内容区域 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 启用开屏页开关 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/labelSwitch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/label_enable_splash"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchEnableSplash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:minWidth="48dp"
+                    android:padding="12dp"
+                    android:labelFor="@id/labelSwitch" />
+            </LinearLayout>
+
+
+            <!-- ✅ 新增：开屏设置与生成设置之间的分隔线 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginVertical="12dp"
+                android:background="@drawable/divider_gradient" />
+
+
+            <!-- 动画时长输入 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="24dp">
+
+                <TextView
+                    android:id="@+id/labelDuration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/label_splash_duration"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/etSplashDuration"
+                    android:layout_width="100dp"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:hint="@string/hint_splash_duration"
+                    android:textSize="14sp"
+                    android:imeOptions="actionDone"
+                    android:autofillHints="username"
+                    android:labelFor="@id/labelDuration"
+                    android:maxLength="2" />
+            </LinearLayout>
+
+            <!-- ✅ 新增：开屏设置与生成设置之间的分隔线 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginVertical="12dp"
+                android:background="@drawable/divider_gradient" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

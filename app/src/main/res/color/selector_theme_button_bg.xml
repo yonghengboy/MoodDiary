@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 被选中时使用主题主色 -->
+    <item android:state_checked="true" android:color="?attr/colorPrimary" />
+    <!-- 未选中时使用背景变体色 -->
+    <item android:color="?attr/colorSurfaceVariant" />
+</selector>

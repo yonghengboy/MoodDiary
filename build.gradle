@@ -1,0 +1,19 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.3.2'
+        //classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.23'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.22'
+
+    }
+}
+
+tasks.register("clean", Delete) {
+    delete layout.buildDirectory
+}
