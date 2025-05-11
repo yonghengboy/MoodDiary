@@ -48,27 +48,3 @@ SQLite（用于存储情绪推荐语和表情）
 
 fade_in.xml 用于 Logo 与标题的淡入效果。
 
-四、项目结构（主要）
-pgsql
-复制
-编辑
-app/
-├── java/com.example.mooddiary/
-│   ├── MainActivity.kt             // 主功能页面
-│   ├── SplashActivity.kt          // 启动页
-│   ├── SettingsActivity.kt        // 设置页
-│   ├── SplashLogoView.kt          // 启动画图标
-│
-├── res/
-│   ├── layout/
-│   │   ├── activity_main.xml
-│   │   ├── activity_settings.xml
-│   │   ├── activity_splash.xml
-│   ├── drawable/
-│   │   ├── bg_gradient.xml
-│   │   ├── splash_background.xml
-│   ├── anim/
-│   │   └── fade_in.xml
-│   ├── values/
-│   │   ├── colors.xml
-│   │   ├── strings.xml
