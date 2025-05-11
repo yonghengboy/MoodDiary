@@ -1,0 +1,46 @@
+# Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# 编译输出
+/build/
+**/build/
+
+# Gradle 缓存
+.gradle/
+local.properties
+.gradle/
+*.log
+
+# 签名文件（请勿上传）
+*.jks
+keystore.properties
+
+# 忽略 APK 文件（如果不想上传）
+*.apk
+
+# 自动生成文件
+captures/
+output.json
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Kotlin 编译产物
+*.class
+*.kt~  
+*.swp
+
+# Lint 报告
+lint-baseline.xml
+lint-results-*.html
+lint-results-*.xml
+
+# Others
+*.bak
+*.tmp

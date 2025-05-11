@@ -1,0 +1,101 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.mooddiary"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <permission
+11-->[androidx.core:core:1.12.0] C:\Users\yongheng\.gradle\caches\8.9\transforms\d06931ca622fb7bad2e80b3a6a75a6da\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+12        android:name="com.example.mooddiary.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.12.0] C:\Users\yongheng\.gradle\caches\8.9\transforms\d06931ca622fb7bad2e80b3a6a75a6da\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+13        android:protectionLevel="signature" />
+13-->[androidx.core:core:1.12.0] C:\Users\yongheng\.gradle\caches\8.9\transforms\d06931ca622fb7bad2e80b3a6a75a6da\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+14
+15    <uses-permission android:name="com.example.mooddiary.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- 应用全局配置 -->
+15-->[androidx.core:core:1.12.0] C:\Users\yongheng\.gradle\caches\8.9\transforms\d06931ca622fb7bad2e80b3a6a75a6da\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.12.0] C:\Users\yongheng\.gradle\caches\8.9\transforms\d06931ca622fb7bad2e80b3a6a75a6da\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+16    <application
+16-->E:\Personal\PersonalRepo\exploitation\Android\MoodDiary_GradleReadyProject\app\src\main\AndroidManifest.xml:6:5-34:19
+17        android:allowBackup="true"
+17-->E:\Personal\PersonalRepo\exploitation\Android\MoodDiary_GradleReadyProject\app\src\main\AndroidManifest.xml:7:9-35
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.12.0] C:\Users\yongheng\.gradle\caches\8.9\transforms\d06931ca622fb7bad2e80b3a6a75a6da\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+19        android:debuggable="true"
+20        android:extractNativeLibs="false"
+21        android:icon="@mipmap/ic_launcher"
+21-->E:\Personal\PersonalRepo\exploitation\Android\MoodDiary_GradleReadyProject\app\src\main\AndroidManifest.xml:8:9-43
+22        android:label="日记生成器"
+22-->E:\Personal\PersonalRepo\exploitation\Android\MoodDiary_GradleReadyProject\app\src\main\AndroidManifest.xml:9:9-30
+23        android:roundIcon="@mipmap/ic_launcher_round"
+23-->E:\Personal\PersonalRepo\exploitation\Android\MoodDiary_GradleReadyProject\app\src\main\AndroidManifest.xml:10:9-54
+24        android:supportsRtl="true"
+24-->E:\Personal\PersonalRepo\exploitation\Android\MoodDiary_GradleReadyProject\app\src\main\AndroidManifest.xml:11:9-35
+25        android:testOnly="true"
+26        android:theme="@style/Theme.MoodDiary" >
+26-->E:\Personal\PersonalRepo\exploitation\Android\MoodDiary_GradleReadyProject\app\src\main\AndroidManifest.xml:12:9-47
+27
+28        <!-- ✅ 启动页设置为默认入口 -->
+29        <activity
+29-->E:\Personal\PersonalRepo\exploitation\Android\MoodDiary_GradleReadyProject\app\src\main\AndroidManifest.xml:15:9-23:20
+30            android:name="com.example.mooddiary.SplashActivity"
+30-->E:\Personal\PersonalRepo\exploitation\Android\MoodDiary_GradleReadyProject\app\src\main\AndroidManifest.xml:16:13-43
+31            android:exported="true"
+31-->E:\Personal\PersonalRepo\exploitation\Android\MoodDiary_GradleReadyProject\app\src\main\AndroidManifest.xml:17:13-36
+32            android:theme="@style/Theme.MoodDiary.Splash" >
+32-->E:\Personal\PersonalRepo\exploitation\Android\MoodDiary_GradleReadyProject\app\src\main\AndroidManifest.xml:18:13-58
+33            <intent-filter>
+33-->E:\Personal\PersonalRepo\exploitation\Android\MoodDiary_GradleReadyProject\app\src\main\AndroidManifest.xml:19:13-22:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->E:\Personal\PersonalRepo\exploitation\Android\MoodDiary_GradleReadyProject\app\src\main\AndroidManifest.xml:20:17-69
+34-->E:\Personal\PersonalRepo\exploitation\Android\MoodDiary_GradleReadyProject\app\src\main\AndroidManifest.xml:20:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->E:\Personal\PersonalRepo\exploitation\Android\MoodDiary_GradleReadyProject\app\src\main\AndroidManifest.xml:21:17-77
+36-->E:\Personal\PersonalRepo\exploitation\Android\MoodDiary_GradleReadyProject\app\src\main\AndroidManifest.xml:21:27-74
+37            </intent-filter>
+38        </activity>
+39
+40        <!-- 主界面 -->
+41        <activity
+41-->E:\Personal\PersonalRepo\exploitation\Android\MoodDiary_GradleReadyProject\app\src\main\AndroidManifest.xml:26:9-28:39
+42            android:name="com.example.mooddiary.MainActivity"
+42-->E:\Personal\PersonalRepo\exploitation\Android\MoodDiary_GradleReadyProject\app\src\main\AndroidManifest.xml:27:13-41
+43            android:exported="true" />
+43-->E:\Personal\PersonalRepo\exploitation\Android\MoodDiary_GradleReadyProject\app\src\main\AndroidManifest.xml:28:13-36
+44
+45        <!-- 设置界面 -->
+46        <activity
+46-->E:\Personal\PersonalRepo\exploitation\Android\MoodDiary_GradleReadyProject\app\src\main\AndroidManifest.xml:31:9-33:40
+47            android:name="com.example.mooddiary.SettingsActivity"
+47-->E:\Personal\PersonalRepo\exploitation\Android\MoodDiary_GradleReadyProject\app\src\main\AndroidManifest.xml:32:13-45
+48            android:exported="false" />
+48-->E:\Personal\PersonalRepo\exploitation\Android\MoodDiary_GradleReadyProject\app\src\main\AndroidManifest.xml:33:13-37
+49
+50        <provider
+50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\yongheng\.gradle\caches\8.9\transforms\7839e59570c164e56a9a06747dd7ff4e\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+51            android:name="androidx.startup.InitializationProvider"
+51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\yongheng\.gradle\caches\8.9\transforms\7839e59570c164e56a9a06747dd7ff4e\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+52            android:authorities="com.example.mooddiary.androidx-startup"
+52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\yongheng\.gradle\caches\8.9\transforms\7839e59570c164e56a9a06747dd7ff4e\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+53            android:exported="false" >
+53-->[androidx.emoji2:emoji2:1.2.0] C:\Users\yongheng\.gradle\caches\8.9\transforms\7839e59570c164e56a9a06747dd7ff4e\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+54            <meta-data
+54-->[androidx.emoji2:emoji2:1.2.0] C:\Users\yongheng\.gradle\caches\8.9\transforms\7839e59570c164e56a9a06747dd7ff4e\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+55                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+55-->[androidx.emoji2:emoji2:1.2.0] C:\Users\yongheng\.gradle\caches\8.9\transforms\7839e59570c164e56a9a06747dd7ff4e\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+56                android:value="androidx.startup" />
+56-->[androidx.emoji2:emoji2:1.2.0] C:\Users\yongheng\.gradle\caches\8.9\transforms\7839e59570c164e56a9a06747dd7ff4e\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+57            <meta-data
+57-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\yongheng\.gradle\caches\8.9\transforms\dd956f90c56e577b0c990eeea6c4568f\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+58                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+58-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\yongheng\.gradle\caches\8.9\transforms\dd956f90c56e577b0c990eeea6c4568f\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+59                android:value="androidx.startup" />
+59-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\yongheng\.gradle\caches\8.9\transforms\dd956f90c56e577b0c990eeea6c4568f\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+60        </provider>
+61    </application>
+62
+63</manifest>
